@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hello.myquarterykz.view.activity.ShiPinActivity">
+
+    <RelativeLayout
+        android:id="@+id/shi"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/image_fanhui"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/leftjiantou" />
+
+        <ImageView
+            android:id="@+id/image_xin"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/image_fanhui"
+            android:background="@drawable/raw_1499933216" />
+
+        <ImageView
+            android:id="@+id/image_lie"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/image_xin"
+            android:background="@drawable/raw_1499933217" />
+
+        <ImageView
+            android:id="@+id/image_fenxiang"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/image_lie"
+            android:background="@drawable/raw_1499995160" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/sdv_yuan"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            app:actualImageScaleType="centerCrop"
+            app:roundAsCircle="true" />
+    </RelativeLayout>
+
+    <cn.jzvd.JZVideoPlayerStandard
+        android:id="@+id/videoplayer"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/shi" />
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/danmaku_view"
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:layout_below="@id/shi"/>
+
+
+
+        <Switch
+            android:id="@+id/bt_t"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:switchMinWidth="20dp"
+            android:textOff=""
+            android:textOn=""
+            android:thumb="@drawable/thumb"
+            android:track="@drawable/track"
+            android:layout_below="@id/shi"/>
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/operation_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#f89">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Send" />
+    </LinearLayout>
+
+    <com.example.hello.myquarterykz.util.DivergeViewSecond
+        android:id="@+id/divergeView"
+        android:layout_width="252dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/shi" />
+
+    <TextView
+        android:id="@+id/text_workDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoplayer"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/text_playNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_workDesc"
+        android:layout_marginTop="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@id/text_workDesc"
+        android:layout_marginTop="50dp"
+        android:background="#3333">
+
+        <ImageView
+            android:id="@+id/i"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/raw_1500033586" />
+
+        <TextView
+            android:id="@+id/text_qiang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/i"
+            android:layout_centerHorizontal="true"
+            android:text="拿起手机速来抢个沙发吧！~" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyquarterYKZ</string>
+    <string name="title_tuijian">推荐</string>
+    <string name="title_duanzi">段子</string>
+    <string name="title_shipin">视频</string>
+</resources>

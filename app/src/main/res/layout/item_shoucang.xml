@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_shoucang"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        app:actualImageScaleType="centerCrop"
+        app:roundAsCircle="true"/>
+
+    <TextView
+        android:id="@+id/text_title_shoucang"
+        android:text="123"
+        android:textColor="#E51C23"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/sdv_shoucang"
+        android:layout_marginBottom="-10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/text_time_shoucang"
+        android:text="123"
+        android:textColor="#E51C23"
+        android:layout_toRightOf="@id/sdv_shoucang"
+        android:layout_below="@id/text_title_shoucang"
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floating_ActionsMenu_shoucang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        fab:fab_icon="@drawable/ic_add_circle_black_24dp"
+        app:fab_expandDirection="left"
+
+        fab:fab_expandDirection="up">
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/detailed_action_share_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/icons"
+            fab:fab_icon="@drawable/ic_error_black_24dp"
+            fab:fab_colorPressed="@color/divider"
+            fab:fab_title="分享" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/detailed_action_like_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_icon="@drawable/ic_swap_horiz_black_24dp"
+            fab:fab_colorNormal="@color/icons"
+            fab:fab_colorPressed="@color/divider"
+            fab:fab_title="收藏" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/detailed_action_settings_shoucang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/icons"
+            fab:fab_icon="@drawable/ic_do_not_disturb_off_black_24dp"
+            fab:fab_colorPressed="@color/divider"
+            fab:fab_title="设置" />
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+    <TextView
+        android:id="@+id/text_cont_shoucang"
+        android:layout_below="@id/sdv_shoucang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="24dp"
+        android:text="无标题"/>
+
+    <ImageView
+        android:id="@+id/shoucangtupian"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/text_cont_shoucang"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="200dp">
+
+    </ImageView>
+    <TextView
+        android:id="@+id/text_cont1_shoucang"
+        android:layout_below="@id/shoucangtupian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="无内容"/>
+    <TextView
+        android:id="@+id/text_cont2_shoucang"
+        android:layout_below="@id/text_cont1_shoucang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="无内容"/>
+</RelativeLayout>

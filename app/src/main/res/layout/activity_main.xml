@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:background="?attr/mainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hello.myquarterykz.MainActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/main_head"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/title_head"
+            android:layout_marginLeft="7dp"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_centerVertical="true"
+            app:actualImageScaleType="centerCrop"
+            app:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/title_write"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/bianji" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+
+            android:background="?android:attr/windowBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/navigation" />
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/drawer_relative"
+        android:background="?attr/mainBackground"
+        android:layout_gravity="left"
+        android:layout_width="300dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="210dp"
+            android:background="@drawable/drawerlayout_background">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/image_touxiangdeng"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            app:actualImageScaleType="centerCrop"
+            app:roundAsCircle="true"
+            />
+        <TextView
+            android:id="@+id/text_gname_c"
+            android:layout_below="@id/image_touxiangdeng"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:text="编辑个性签名"/>
+        <TextView
+            android:id="@+id/text_name_c"
+            android:layout_marginLeft="110dp"
+            android:layout_marginTop="95dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="#fff"
+            android:text="椰汁奶茶"/>
+        <ImageView
+            android:id="@+id/img_sex"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="220dp"
+            android:layout_width="45dp"
+            android:layout_height="43dp"
+            android:background="@drawable/sex"/>
+        </RelativeLayout>
+        <LinearLayout
+            android:id="@+id/guanzhu"
+            android:layout_marginTop="218dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@drawable/wodeguanzhu" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:text="我的关注"
+                android:textSize="15sp" />
+            <ImageView
+
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/rightjiantou" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/shoucang"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/guanzhu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@drawable/wodeshoucang" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:text="我的收藏"
+                android:textSize="15sp" />
+            <ImageView
+                android:layout_marginLeft="210dp"
+                android:layout_marginTop="7dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/rightjiantou" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/sousuo"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/shoucang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@drawable/sousuohaoyou" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:text="搜索好友"
+                android:textSize="15sp" />
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="210dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/rightjiantou" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/xiaoxi"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/sousuo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@drawable/xiaoxitongzhi" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:text="消息通知"
+                android:textSize="15sp" />
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="210dp"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/rightjiantou" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ye"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/xiaoxi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="28dp"
+                android:src="@drawable/yejian" />
+
+            <RadioButton
+                android:id="@+id/yejian"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:button="@null"
+                android:text="夜间模式"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>

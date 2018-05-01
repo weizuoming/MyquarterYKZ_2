@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="textColor">#FF000000</color>
+    <color name="backgroundColor">#FFFFFF</color>
+
+    <color name="nightColorPrimary">#3b3b3b</color>
+    <color name="nightColorPrimaryDark">#383838</color>
+    <color name="nightColorAccent">#a72b55</color>
+    <color name="nightlan">#383838</color>
+    <color name="nightthumb_select">#383838</color>
+    <color name="nightmain_head">#000</color>
+    <color name="nightmain_headf">#383838</color>
+    <color name="nightmain_headtextcolor">#ececec</color>
+    <color name="main_headtextcolor">#000</color>
+    <color name="main_headf">#fff</color>
+    <color name="main_head">#0099ff</color>
+
+    <color name="hei">#000</color>
+    <color name="lan">#FF40C3FF</color>
+    <color name="thumb_select">#0099ff</color>
+    <color name="thumb_normal">#cccccc</color>
+</resources>

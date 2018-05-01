@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp"
+    android:orientation="horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv_guan"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        app:actualImageScaleType="centerCrop"
+        app:roundAsCircle="true"/>
+    <LinearLayout
+        android:id="@+id/line4"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/sdv_guan"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_title_guan"
+            android:text="标题"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/text_cont_guan"
+            android:text="内容"
+            android:textSize="14sp"
+            android:textColor="#3333"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/text_time_guan"
+            android:text="123"
+            android:textSize="12sp"
+            android:textColor="#3333"
+            android:layout_marginRight="60dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_width="26dp"
+            android:layout_toRightOf="@id/text_time_guan"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="-2dp"
+            android:layout_height="20dp"
+            android:src="@drawable/rightjiantou"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="mainBackground">@color/backgroundColor</item>
+        <item name="android:title">@color/main_head</item>
+        <item name="android:titleCondensed">@color/main_headf</item>
+        <item name="textAppearanceSearchResultTitle">@color/main_headtextcolor</item>
+    </style>
+    <style name="NightAppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/nightColorPrimary</item>
+        <item name="colorPrimaryDark">@color/nightColorPrimaryDark</item>
+        <item name="colorAccent">@color/nightColorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="mainBackground">@color/nightColorPrimaryDark</item>
+        <item name="android:title">@color/nightmain_head</item>
+        <item name="android:titleCondensed">@color/nightmain_headf</item>
+        <item name="textAppearanceSearchResultTitle">@color/nightmain_headtextcolor</item>
+    </style>
+</resources>
